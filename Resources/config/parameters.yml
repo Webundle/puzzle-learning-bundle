@@ -1,0 +1,27 @@
+parameters:
+    learning:
+        navigation:
+            title: learning.navigation.title
+            description: learning.navigation.description
+            icon: "mic"
+            enable: true
+            dependencies: 'user,media'
+            admin_menu: "LearningBundle::admin_menu.html.twig"
+        content:
+            bundle_name: learning.content.bundle_name
+            post:
+                list: learning.content.post.list
+                show: learning.content.post.show
+                create: learning.content.post.create
+                update: learning.content.post.update
+                remove: learning.content.post.remove
+                remove_list: learning.content.post.remove_list
+            category:
+                list: learning.content.category.list
+                show: learning.content.category.show
+                create: learning.content.category.create
+                update: learning.content.category.update
+                remove: learning.content.category.remove
+                remove_list: learning.content.category.remove_list
+
+

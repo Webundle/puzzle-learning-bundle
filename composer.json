@@ -1,0 +1,31 @@
+{
+	"name" : "webundle/puzzle-learning-bundle",
+	"description" : "Manage learning",
+	"type" : "symfony-bundle",
+	"authors" : [{
+			"name" : "AGNES Gnagne Cedric",
+			"email" : "cecenho55@gmail.com"
+		}
+	],
+	"keywords" : [
+		"learning formation"
+	],
+	"license" : "MIT",
+	"require" : {
+		"php" : ">=5.5.9",
+		"webundle/puzzle-admin-bundle" : "^1.0",
+		"webundle/puzzle-user-bundle" : "^1.0",
+		"webundle/puzzle-media-bundle" : "^1.0"
+	},
+	"autoload" : {
+		"psr-0" : {
+			"Puzzle\\MediaBundle" : ""
+		}
+	},
+	"target-dir" : "Puzzle/MediaBundle",
+	"extra" : {
+		"branch-alias" : {
+			"dev-master" : "1.0.0"
+		}
+	}
+}

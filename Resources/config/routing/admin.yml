@@ -1,0 +1,62 @@
+# Admin
+puzzle_admin_learning_category_list:
+    path:     /category/list
+    defaults: { _controller: 'LearningBundle:Admin:listCategories' }
+
+puzzle_admin_learning_category_create:
+    path:     /category/create
+    defaults: { _controller: 'LearningBundle:Admin:createCategory' }
+
+puzzle_admin_learning_category_show:
+    path:     /category/{id}
+    defaults: { _controller: 'LearningBundle:Admin:showCategory' }
+
+puzzle_admin_learning_category_update:
+    path:     /category/{id}/update
+    defaults: { _controller: 'LearningBundle:Admin:updateCategory' }
+    
+puzzle_admin_learning_category_delete:
+    path:     /category/{id}/delete
+    defaults: { _controller: 'LearningBundle:Admin:deleteCategory' }
+
+# Admin
+puzzle_admin_learning_course_list:
+    path:     /course/list
+    defaults: { _controller: 'LearningBundle:Admin:listCourses' }
+
+puzzle_admin_learning_course_create:
+    path:     /course/create
+    defaults: { _controller: 'LearningBundle:Admin:createCourse' }
+
+puzzle_admin_learning_course_show:
+    path:     /course/{id}
+    defaults: { _controller: 'LearningBundle:Admin:showCourse' }
+    
+puzzle_admin_learning_course_update:
+    path:     /course/{id}/update
+    defaults: { _controller: 'LearningBundle:Admin:updateCourse' }
+
+puzzle_admin_learning_course_delete:
+    path:     /course/{id}/delete
+    defaults: { _controller: 'LearningBundle:Admin:deleteCourse' }
+
+# Admin
+puzzle_admin_learning_comment_list:
+    path:     /course/{id}/comment/list
+    defaults: { _controller: 'LearningBundle:Admin:listComments' }
+
+puzzle_admin_learning_comment_update:
+    path:     /comment/{id}/update
+    defaults: { _controller: 'LearningBundle:Admin:updateComment' }
+    
+puzzle_admin_learning_comment_approve:
+    path:     /comment/{id}/approve
+    defaults: { _controller: 'LearningBundle:Admin:approveComment' }
+    
+puzzle_admin_learning_comment_disapprove:
+    path:     /comment/{id}/disapprove
+    defaults: { _controller: 'LearningBundle:Admin:disapproveComment' }
+
+puzzle_admin_learning_comment_delete:
+    path:     /comment/{id}/delete
+    defaults: { _controller: 'LearningBundle:Admin:deleteComment' }

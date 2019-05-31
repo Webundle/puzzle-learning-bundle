@@ -1,0 +1,13 @@
+learning_admin:
+    resource: '@LearningBundle/Resources/config/routing/admin.yml'
+    prefix:   '%admin_prefix%learning'
+    host: '%admin_host%'
+    options:
+        expose: true
+
+learning_app:
+    resource: '@LearningBundle/Resources/config/routing/app.yml'
+    prefix:   '/learning'
+    host: '%host%'
+    options:
+        expose: true

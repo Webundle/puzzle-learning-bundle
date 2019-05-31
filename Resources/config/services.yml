@@ -1,0 +1,14 @@
+services:
+    learning.course_listener:
+        class: Puzzle\LearningBundle\Listener\CourseListener
+        arguments: [ "@doctrine.orm.entity_manager" ]
+        public: false
+        tags:
+            - { name: kernel.event_listener, event: "learning.course.created", method: onCreated }
+
+    learning.twig.extension:
+        class: Puzzle\LearningBundle\Twig\LearningExtension
+        public: false
+        arguments: [ '@doctrine.orm.entity_manager', "@knp_paginator" ]
+        tags:
+            - { name: twig.extension }
