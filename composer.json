@@ -19,10 +19,10 @@
 	},
 	"autoload" : {
 		"psr-0" : {
-			"Puzzle\\MediaBundle" : ""
+			"Puzzle\\LearningBundle" : ""
 		}
 	},
-	"target-dir" : "Puzzle/MediaBundle",
+	"target-dir" : "Puzzle/LearningBundle",
 	"extra" : {
 		"branch-alias" : {
 			"dev-master" : "1.0-dev"
